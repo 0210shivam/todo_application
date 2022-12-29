@@ -64,7 +64,22 @@ class Home extends StatelessWidget {
                           hintText: 'Add a new todo Item',
                           border: InputBorder.none),
                     ),
-                  ))
+                  )),
+                  // Plus button added
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 20, right: 20),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: tdBlue,
+                          minimumSize: const Size(60, 60),
+                          elevation: 10),
+                      child: const Text(
+                        '+',
+                        style: TextStyle(fontSize: 40),
+                      ),
+                    ),
+                  )
                 ],
               ),
             )
