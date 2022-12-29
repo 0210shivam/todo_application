@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
         backgroundColor: tdBGColor,
         appBar: _buildAppBar(),
         body: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
           child: Column(
             children: [
               searchBox(),
@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
 
   Widget searchBox() {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
