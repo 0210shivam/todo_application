@@ -7,6 +7,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: tdBGColor,
       appBar: _buildAppBar(),
       body: const Text('data'),
     );
