@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/constants/colors.dart';
 
+import '../widgets/todo.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -14,6 +16,22 @@ class Home extends StatelessWidget {
           child: Column(
             children: [
               searchBox(),
+              // wrap with expaded widget - to overcome not showing problem,
+              Expanded(
+                child: ListView(
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(top: 50, bottom: 20),
+                      child: const Text(
+                        'All ToDos',
+                        style: TextStyle(
+                            fontSize: 30, fontWeight: FontWeight.w500),
+                      ),
+                    ),
+                    const ToDoItem(),
+                  ],
+                ),
+              )
             ],
           ),
         ));
@@ -73,5 +91,5 @@ class Home extends StatelessWidget {
   }
 }
 
-// we used container -- which should be replaced with 
-    // sizedBox
+// we used container -- which should be replaced with
+// sizedBox
