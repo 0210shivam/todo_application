@@ -122,6 +122,7 @@ class Home extends StatelessWidget {
         elevation: 0,
         backgroundColor: tdBGColor,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Icon(
               Icons.menu,
